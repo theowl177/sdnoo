@@ -1,0 +1,24 @@
+module sdno {
+    yang-version 1;
+    namespace "urn:opendaylight:params:xml:ns:yang:sdno";
+    prefix "sdno";
+
+    revision "2015-01-05" {
+        description "Initial revision of sdno model";
+    }
+    
+    rpc hello-world {
+      input {
+        leaf name {
+          type string;
+        }
+      }
+      
+      output {
+        leaf greating {
+          type string;
+        }
+      }
+    }
+    
+}
